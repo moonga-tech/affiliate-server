@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Invoice</title>
+  <meta
+    name="description"
+    content="Payment system that safeguides online transactions"
+  />
+  <link rel="shortcut icon" href="./images/Picsart_22-12-18_19-21-26-982.png" />
+  <link rel="stylesheet" href="./assets/invoicelist.css" />
+</head>
+
+<body>
+  <!--LANDING PAGE-->
+  <div class="page-header">
+    <span>INVOICE</span>
+    <span id="invoice-titles">Invoice ID</span>
+    <span id="InvoiceiD"></span>
+  </div>
+
+  <div class="page-content-container">
+    <div class="page-content">
+      <div class="rowholder">
+        <span class="titles">Status </span
+        ><span id="status" class="subtitles"></span>
+      </div>
+
+      <div class="rowholder">
+        <span class="titles">From </span>
+        <span id="From" class="subtitles"></span>
+      </div>
+
+      <div class="rowholder">
+        <span class="titles">To </span><span id="To" class="subtitles"></span>
+      </div>
+
+      <div class="rowholder">
+        <span class="titles">Total</span><span class="subtitles">ZMW</span
+        ><span id="Total" class="subtitles"></span>
+      </div>
+    </div>
+  </div>
+
+  <table class="content-table">
+    <thead>
+      <tr>
+        <th>Product name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody id="data-output">
+      <!-- Prodcuts from javascript file in here. -->
+    </tbody>
+  </table>
+
+  <div class="float-button" id="pay-button">
+    <span>PAY</span>
+  </div>
+
+  <div class="image-container">
+    <div class="image-supported">
+      <img
+        src="./images/zamtel_icon.png"
+        alt=""
+        width="40"
+        height="40"
+        class="icon"
+      />
+
+      <img
+        src="./images/mtn_icon.jpg"
+        alt=""
+        width="40"
+        height="40"
+        class="icon"
+      />
+
+      <img src="./images/visa.png" alt="" width="40" height="40" class="icon" />
+    </div>
+
+    <div class="supported-payments">Supported Payments</div>
+  </div>
+
+  <div class="zatu">
+    <p>
+      This transaction is secured end to end. <br />Both buyer and seller are
+      protected from fraud
+    </p>
+  </div>
+
+  <!--TRANSACTION MODAL-->
+  <div class="transaction-container" id="transaction-container">
+    <div class="button-container">
+      <span id="paymenttitles">Mobile Number to used to make payment</span>
+
+      <input
+        type="phone"
+        name=""
+        id="verify-input"
+        placeholder="Phone Number"
+      />
+
+      <button id="initiate" type="button">INITIATE TRANSACTION</button>
+      <button id="cancel" type="button">CANCEL TRANSACTION</button>
+    </div>
+  </div>
+
+  <!--LOADING TRANSACTION-->
+  <div class="loading-container-after" id="loading-container">
+    <div class="loading-content-holder">
+      <span id="loading-title">Awaiting Approval</span>
+
+      <img id="mtn" src="./images/mtn_icon.jpg" width="50" height="50" />
+
+      <p id="propmt">Dial *115# incase payment propmt does not pop-up</p>
+      <span id="propmt">Time out <span id="time_out_coutnt"></span></span>
+    </div>
+  </div>
+
+  <!--SUCESSFUL TRANSACTION MODAL-->
+  <div class="modal-container-after" id="modal-container">
+    <div class="modal-content">
+      <img class="tick" src="./images/check.png" width="40" height="40" />
+
+      <span class="modal-title">Transaction Successful</span>
+
+      <button class="approval" id="okay-successful" type="button">ok</button>
+    </div>
+  </div>
+
+  <!--CANCELED OR FAILURE TRANSACTION MODAL-->
+  <div
+    class="failed-transaction-modal-container-after"
+    id="failed-transaction-modal-container"
+  >
+    <div class="failed-transaction-modal-content">
+      <img
+        class="failed-icon"
+        src="./images/banknotes-512.png"
+        width="40"
+        height="40"
+      />
+
+      <span class="failed-transaction-modal-title">Transaction Failed</span>
+
+      <button class="approval" id="okay-failed" type="button">ok</button>
+    </div>
+  </div>
+</body>
+<script src="./assets/invoicelist.js"></script>

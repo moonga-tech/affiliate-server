@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>checkout</title>
+  <meta name="description" content="Payment system that safeguides online transactions" />
+  <link rel="shortcut icon" href="./images/images/zatu_icon.png" />
+  <link rel="stylesheet" href="./assets/checkout.css" />
+</head>
+
+<body>
+  <div></div>
+
+  <!--LANDING SCREEN-->
+  <div class="landing-screen-container-after" id="landing-screen-container">
+    <div class="screen-content-holder">
+      <img width="150" height="150" src="./images/cart-59-512.png" />
+
+      <span>Generate transactions via the <span>url</span> for checkout
+        purposes</span>
+      <button class="proceed-button" id="proceed-button">Proceed</button>
+    </div>
+  </div>
+
+  <!--GENERATE URL CONTAINER-->
+  <div id="generate-url-container" class="generate-transaction-container-after">
+    <div class="generate-transaction-content">
+      <input class="trans" placeholder="Receiver" type="tel" id="receiver-url" value="" />
+
+      <input class="trans" type="tel" placeholder="Sender" id="sender-url" value="" />
+
+      <input class="trans" type="tel" placeholder="Amount" id="amount-url" value="" />
+      <button id="generate-url" class="trans" type="button">
+        GENERATE LINK
+      </button>
+      <button id="cancel-url" class="trans" type="button">CANCEL</button>
+
+      <div class="url-container">
+        <span id="url">https://zatuwallet.com</span>
+      </div>
+
+      <div class="share">
+        <img id="" src="./images/PngItem_404856.png" alt="" width="40" height="40" />
+
+        <img id="" src="" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!--WRONG OTP NOTIFICATION-->
+  <div id="wrong-otp-notification-container" class="wrong-otp-notification-after">
+    <span>wrong OTP code</span>
+  </div>
+
+  <!--SMS NOTIFICATION-->
+  <div id="notification" class="verification-loading">
+    <span id="sms">sending OTP code</span>
+
+    <img id="check" class="loading-icon" src="./images/accept.png" width="25.5" height="25.5" alt="" />
+
+    <img id="circle" class="loading-icon" src="./images/flip.png" width="30" height="30" alt="" />
+  </div>
+  <!--LOADING TRANSACTION-->
+  <div class="loading-container-after" id="loading-container">
+    <div class="loading-content-holder">
+      <span id="loading-title">Awaiting Approval</span>
+
+      <img id="mtn" src="./images/New-mtn-logo.jpg" width="50" height="50" />
+
+      <p id="propmt">Dial *115# incase payment propmt does not pop-up</p>
+      <span id="propmt">Time out <span id="time_out_coutnt"></span></span>
+    </div>
+  </div>
+
+  <!--SUCESSFUL TRANSACTION MODAL-->
+  <div class="modal-container-after" id="modal-container">
+    <div class="modal-content">
+      <img class="tick" src="./images/check.png" width="40" height="40" />
+
+      <span class="modal-title">Transaction Successful</span>
+
+      <button class="approval" id="okay-successful" type="button">ok</button>
+    </div>
+  </div>
+
+  <!--CANCELED OR FAILURE TRANSACTION MODAL-->
+  <div class="failed-transaction-modal-container-after" id="failed-transaction-modal-container">
+    <div class="failed-transaction-modal-content">
+      <img class="failed-icon" src="./images/banknotes-512.png" width="40" height="40" />
+
+      <span class="failed-transaction-modal-title">Transaction Failed</span>
+
+      <button class="approval" id="okay-failed" type="button">ok</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-child">
+      <img src="./images/gmail.png" alt="" width="30" height="30" />
+      <h1>
+        Report any suspicious transaction via
+        <span id="support-email">support@zatuwallet.com</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="transaction-details">
+      <h3>
+        Receiver phone number <span class="checkout-title" id="receiver"></span>
+      </h3>
+      <h3>
+        Sender phone number <span class="checkout-title" id="sender"></span>
+      </h3>
+      <h3>Total amount ZMW <span class="checkout-title" id="total"></span></h3>
+      <h3>Order ID <span id="orderid">xxxxxxxxxx</span></h3>
+    </div>
+
+    <div class="button-container">
+      <input type="phone" name="" id="verify-input" placeholder="Verication Code" />
+
+      <button id="verify" type="button">VERIFY TRANSACTION</button>
+      <button id="generate" type="button">GENERATE NEW TRANSACTION</button>
+      <button id="initiate" type="button">INITIATE TRANSACTION</button>
+    </div>
+
+    <div class="image-container">
+      <div class="image-supported">
+        <img src="./images/Screen_shot_2011-04-15_at_22.04.12_400x400.png" alt="" width="40" height="40" class="icon" />
+
+        <img src="./images/images (1).png" alt="" width="40" height="40" class="icon" />
+
+        <img src="./images/visa.png" alt="" width="40" height="40" class="icon" />
+      </div>
+
+      <div class="supported-payments">Supported Payments</div>
+    </div>
+  </div>
+
+  <div class="zatu">
+    <p>
+      This transaction is secured end to end. <br />Both buyer and seller are
+      protected from fraud
+    </p>
+  </div>
+
+  <script src="./assets/checkout.js"></script>
+</body>

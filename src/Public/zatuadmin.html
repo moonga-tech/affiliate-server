@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Admin</title>
+  <meta name="description" content="Payment system that safeguides online transactions" />
+  <link rel="shortcut icon" href="./images/zatu_icon.png" />
+  <link rel="stylesheet" href="./assets/zatuadmins.css" />
+</head>
+
+<body>
+
+
+  <!--LOADING CONTAINER-->
+  <div class="dismiss" id="loading_container">
+    <img id="loading_icon" src="./images/loading-wheel.png" alt=""> <span id="loading_message">Loading</span>
+  </div>
+
+
+  <!--DASHBAORD-->
+  <div class="dashboard_container" id="dashboard_container">
+    <!--SIDEBAR-->
+    <div class="sidebar_container" id="sidebar_container">
+      <img id="logo" src="./images/zatu_log_all_white.png" alt="" width="60">
+
+      <div class="options" id="options_transactions">
+
+        <span>Transaction List</span>
+      </div>
+      <div class="options" id="options_users">
+
+        <span>Users</span>
+      </div>
+      <div class="options" id="options_settings">
+
+        <span>Settings</span>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------->
+    <!--MIDDLE CONTAINER-->
+    <div class="main_container" id="main_container">
+
+      <!--HEARDER-->
+      <div class="row_1" id="row_1">
+        <div class="serach_transaction"><input class="search_input" type="text" placeholder="Transaction ID"
+            id="transaction_input_id"> <img id="search_transaction_icon_id" src="./images/search-interface-symbol.png"
+            alt="" width="20"></div>
+        <div class="profile"> <img id="fingerprint_id" src="./images/fingerprint (1).png" alt="" width="30"></div>
+
+      </div>
+      <!--TRANSACTION TYPES-->
+      <div class="transaction_type_container" id="transaction_type_container">
+
+        <div class="transaction_type_content_holder_active" id="successful_transaction"><span>Successful
+            Transaction</span></div>
+        <div class="transaction_type_content_holder_inactive" id="pening_transaction"><span>Pending Transaction</span>
+        </div>
+        <div class="transaction_type_content_holder_inactive" id="failed_transaction"><span>Failed Transaction</span>
+        </div>
+      </div>
+      <!-----------------------------------------CONTAINER----------------------------------------------------------------------->
+      <!--TRANSACTION LIST-->
+      <div class="dismiss" id="transaction_list_container">
+
+        <div class="transaction_container" id="transaction_container">
+          <div class="transaction_row">
+            <span class="transaction_text_title">Transaction ID: </span><span class="subtitle" id="transaction_id">
+              XXXXXXXXXXX</span>
+
+          </div>
+          <div class="transaction_row">
+            <span class="transaction_text_title">Sender : </span><span class="subtitle" id="sender"> 0971067790</span>
+
+          </div>
+          <div class="transaction_row">
+            <span class="transaction_text_title">Receiver : </span><span class="subtitle" id="Receiver">
+              0971067790</span>
+
+          </div>
+          <div class="transaction_row">
+            <span class="transaction_text_title">Amount: </span><span class="subtitle" id="amount"> ZMW 790</span>
+
+          </div>
+
+          <div class="transaction_row">
+            <span class="transaction_text_title_date">Date: </span><span class="subtitle_date" id="date"> 12 fed
+              2023</span>
+
+          </div>
+          <div class="transaction_row">
+            <span class="transaction_text_title_status">Status: </span><span class="subtitle_status" id="date">
+              Successful</span>
+
+          </div>
+        </div>
+        <div class="transaction_container" id="transaction_container">
+          <div class="transaction_row">
+            <span class="transaction_text_title">Transaction ID: </span><span class="subtitle"> XXXXXXXXXXX</span>
+
+          </div>
+          <div class="transaction_row">
+            <span class="transaction_text_title">Sender : </span><span class="subtitle"> 0971067790</span>
+
+          </div>
+          <div class="transaction_row">
+            <span class="transaction_text_title">Receiver : </span><span class="subtitle"> 0971067790</span>
+
+          </div>
+          <div class="transaction_row">
+            <span class="transaction_text_title">Amount: </span><span class="subtitle"> ZMW 700</span>
+
+          </div>
+
+          <div class="transaction_row">
+            <span class="transaction_text_title_date">Date: </span><span class="subtitle_date"> 12 fed 2023</span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <!--USER LIST-->
+      <div class="dismiss" id="user_list_container">
+
+        <div class="row_user_detains_content_holder" id="user_details_1">
+          <div class="column_user">
+            <div class="row_user"><span>Full Names: </span><span class="full_names_user"> Brian Mulenga</span></div>
+
+            <div class="row_user"><span>Phone #</span><span class="user_phone_number">0963274070</span></div>
+          </div>
+          <div class="dismiss" id="icon_user_section_check">
+
+            <img src="./images/check.png" alt="" width="20">
+
+
+          </div>
+          <div class="dismiss" id="icon_user_section_flagged">
+
+            <img src="./images/images.png" alt="" width="20">
+
+
+          </div>
+        </div>
+        <div class="row_user_detains_content_holder" id="user_details_2">
+
+          <div class="column_user">
+            <div class="row_user"><span>Full Names: </span><span class="full_names_user">Brian Mulenga</span></div>
+
+            <div class="row_user"><span>Phone #</span><span class="user_phone_number">0963274070</span></div>
+          </div>
+
+          <div class="icon_user_section">
+
+            <img src="./images/images.png" alt="" width="20">
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <!--USER DIALOG-->
+      <div class="dismiss" id="user_dialog">
+        <div class="user_dialog_content_holder">
+
+          <div class="status_row">
+
+            <div class="status_columns">
+              <span>Credit Score</span>
+              <span class="status_columns_titles" id="credit_score">0.2</span>
+
+            </div>
+            <div class="status_columns">
+              <span>Credit Limit</span>
+              <span class="status_columns_titles" id="credit_limit">ZMW 100</span>
+
+            </div>
+
+            <div class="status_columns" id="status_columns">
+              <span>Account Status</span>
+              <span class="status_columns_titles" id="account_status">DOMANT</span>
+
+            </div>
+          </div>
+          <div class="user_names_client">
+            <!--user details-->
+            <div class="details_row"> <span class="full_detail_names">Full Names</span> <span
+                id="dialog_user_full_names">Charity Mulenga</span>
+            </div>
+            <div class="details_row"> <span>Phone #</span> <span id="dialog_user_phone_number">0963274011</span></div>
+
+          </div>
+
+          <!--user financial account-->
+          <div class="user_financial_account_client">
+
+
+            <div class="details_column_finance">
+
+              <span>ZMW</span> <span id="current_account">1500</span>
+            </div>
+            <div class="alternative_financial_accounts">
+              <div class="pool_account_column">
+                <span class="pool_title">
+
+                  Pool Acc
+                </span>
+
+                <span class="pool_subtitle" id="dialog_user_pool_account">
+                  ZMW 200
+
+                </span>
+              </div>
+              <div class="holding_account_column">
+
+                <span class="holding_account_title">
+                  Holding Acc
+
+                </span><span class="holding_account_subtitle" id="dialog_user_holding_account">
+                  ZMW 1000
+
+                </span>
+              </div>
+            </div>
+
+          </div>
+          <!-- button holder-->
+          <div class="button_holder">
+            <button id="reset-password_button">RESET PASSWORD</button>
+            <button id="suspend_account_button">SUSPEND ACCOUNT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--EMPTY LIST-->
+    <div class="dismiss" id="row_3">
+      <span id="empty_list">--EMPTY LIST--</span>
+    </div>
+
+  </div>
+
+  </div>
+
+
+  <!--USER INPUT DETAILS CONTAINER----option_class=dismiss---option_class=user_input_details_container-->
+  <div  class="user_input_details_container" id="user_input_details_container">
+    <div class="user_input_details_content_holder">
+      <div class="user_input_tile_holder"> <span id="user_register_title"></span></div>
+
+      <input type="text" id="phone_number_input" placeholder="Phone # ( 096xxxxxxxx) " />
+
+      <span id="register_user_button">SIGN IN</span>
+    </div>
+  </div>
+
+  <!--VERIFICATION SECTION FINGER PRINTE-->
+  <div class="dismiss" id="verification_container">
+    <div class="verification_content_holder" id="verification_content_holder">
+      <img id="fingerprint" src="./images/fingerprint (1).png" alt="" width="60">
+
+      <span>Scan your fingerprint to complete verification</span>
+    </div>
+
+    <div class="dismiss" id="successful_verification"> <img src="./images/check.png" alt="" width="60">
+      <span>verification Successful</span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+<script src="./assets/zatuadmin.js"></script>

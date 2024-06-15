@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <link rel="stylesheet" href="./assets/shops.css" />
+  <link rel="shortcut icon" href="./images/zatu_icon.png">
+</head>
+
+<body>
+  <!--HEADER-->
+  <div class="header">
+    <div class="profile">
+      <span id="client_details"></span>
+    </div>
+
+    <div class="cart" id="cart_container_icon">
+      <img src="./images/cart-59-512.png" alt="" width="30" />
+      <span id="cart_item_number"></span>
+    </div>
+  </div>
+
+
+
+
+  <!--CARD HOLDER-->
+  <div class="cards" id="card_container"></div>
+
+
+
+
+  <!--FOOTER-->
+  <div class="foot" id="foot">
+    <div class="foot_content">
+      <img src="./images/home-7-512.png" alt="" width="30" id="home" />
+      <img src="./images/banknotes-512.png" alt="" width="30" id="transaction_history" />
+      <img src="./images/icons8-delivery-100.png" alt="" width="30" id="delivery_history" />
+    </div>
+  </div>
+
+
+
+  <!--COMFIRMATION HOLDER-->
+  <div class="dismiss" id="option_confirmation_container">
+    <div class="option_confirmation_content_holder">
+      <span class="sizes_wanted">Kindly pick the sizes you wish to add to the cart e.g
+        43,44,45....S,M,L,XL</span>
+      <input type="text" placeholder="Sizes wanted" class="add_to_cart_input" id="Sizes_wanted" />
+      <button class="comfirm_button" id="comfirm_button">Comfirm</button>
+      <button class="cancel_button" id="cancel_button">Cancel</button>
+    </div>
+  </div>
+
+
+
+  <!--TRANSACTION HISTORY-->
+  <div class="dismiss" id="transaction_history_container">
+    <div class="content_holder_transaction_history">
+      <div class="header_row">
+        <span>Transaction History</span>
+        <span class="cancel_modal" id="cancel_modal_transactions">X</span>
+      </div>
+      <div class="column">
+        <div class="row"><span>Receiver</span> <span>0971023377</span></div>
+        <div class="row"><span>Sender</span> <span>0963247744</span></div>
+        <div class="row"><span>Amount</span> <span>ZMW 1000</span></div>
+      </div>
+      <div class="column">
+        <div class="row"><span>Receiver</span> <span>0971023377</span></div>
+        <div class="row"><span>Sender</span> <span>0963247744</span></div>
+        <div class="row"><span>Amount</span> <span>ZMW 1000</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!--CART-->
+  <div class="dismiss" id="cart_list_container_">
+    <div class="content_holder_cart_list_container">
+      <div class="header_row">
+        <span id="total_products"></span>
+        <span class="cancel_modal" id="cancel_modal_cart_list">X</span>
+      </div>
+
+      <div class="list_container" id="list_container">
+
+
+
+
+        <!-- <div class="row_container">
+
+          <div class="column">
+            <div class="row_"><span class="Product_id">Product Id</span> <span class="Product_id">xxxxxxxxxxxxxxx</span>
+            </div>
+            <div class="row_"><span class="Product_price">ZMW 1000</span> <span class="Product_price"> x </span><span
+                class="Product_price">3</span></div>
+            <div class="row_"><span class="Product_id">Sizes wanted </span> <span class="Product_id">43,45</span></div>
+          </div>
+          <div class="subtotal">
+
+            <span id="subtotal">ZMW 500</span>
+            <span id="remove_from_cart">Remove</span>
+          </div>
+
+        </div> -->
+
+
+      </div>
+
+      <div class="checkout_container">
+
+
+        <button id="pay_button">
+          PAY
+        </button>
+
+        <div class="integrations">
+
+          <img class="rounded_icon" src="./images/mtn_icon.jpg" alt="" width="20">
+
+          <img src="./images/zatu_icon.png" alt="" width="20">
+          <img class="rounded_icon" src="./images/zamtel_icon.png" alt="" width="20">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  <!--DELIVERY HISTORY-->
+  <div class="dismiss" id="delivery_history_container">
+    <div class="content_holder_delivery_history">
+      <div class="header_row">
+        <span>Delivery History</span>
+        <span class="cancel_modal" id="cancel_modal_delivery">X</span>
+      </div>
+      <div class="column">
+        <div class="row"><span>Parcel Id</span> <span>xxxxxxx</span></div>
+        <div class="row"><span>Parcel Id</span> <span>xxxxxxx</span></div>
+        <div class="row"><span>Parcel Id</span> <span>xxxxxxx</span></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--LOADING SCREEN-->
+  <div class="loading_container" id="loading_container">
+    <div class="content_holder_loading">
+      <img src="./images/loading-wheel.png" alt="" width="80" id="loading_icon" />
+    </div>
+  </div>
+
+
+
+  <!--LOG IN AND SIGNUP-->
+  <div class="dismiss" id="verification_container">
+    <div class="content_holder_verification">
+
+      <!--LOG_IN-->
+      <div class="log_in" id="log_in_content_holder">
+        <input type="tel" placeholder="Phone#" id="phone_number_log_in_inputs" class="text_inputs" />
+        <input type="password" placeholder="Password" id="password_log_in_inputs" class="text_inputs" />
+        <button id="log_in_button" class="buttons">Login</button>
+        <div class="row_buttons">
+          <button id="sign_up_link_button" class="row_buttons_">Sign up</button>
+          <button id="forgot_password" class="row_buttons_">
+            Forgot password?
+          </button>
+        </div>
+      </div>
+
+      <!--SIGN_UP-->
+      <div class="dismiss" id="sign_up_content_holder">
+        <div class="row_back">
+          <button id="back_to_login">Back</button>
+        </div>
+        <input type="text" placeholder="First Name" id="first_name_inputs" class="text_inputs" />
+        <input type="text" placeholder="Last Name" id="last_name_inputs" class="text_inputs" />
+        <input type="tel" placeholder="Phone #" id="phone_number_sign_up_inputs" class="text_inputs" />
+        <input type="password" placeholder="Password" id="password_inputs" class="text_inputs" />
+        <input type="Password" placeholder="Conform Password" id="confirm_password_inputs" class="text_inputs" />
+        <button id="sign_up_button" class="buttons">Signup</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--EMPTY SHOP-->
+  <div class="dismiss" id="empty_shop_container">
+    <div class="content_holder_empty_shop">
+
+      <span>Empty Shop</span>
+    </div>
+  </div>
+
+  <!--LOADING TRANSACTION-->
+  <div class="dismiss" id="loading_container_transaction">
+    <div class="loading-content-holder">
+      <span id="loading-title">Awaiting Approval</span>
+
+      <img id="mtn" src="./images/mtn_icon.jpg" width="50" height="50" />
+
+      <p id="propmt">Dial *115# incase payment propmt does not pop-up</p>
+      <span id="propmt">Time out <span id="time_out_coutnt"></span></span>
+    </div>
+  </div>
+
+  <!--SUCESSFUL TRANSACTION MODAL-->
+  <div class="dismiss" id="successful_modal_container_transaction">
+    <div class="modal-content">
+      <img class="tick" src="./images/check.png" width="40" height="40" />
+
+      <span class="modal-title">Transaction Successful</span>
+
+      <button class="approval" id="okay_successful" type="button">ok</button>
+    </div>
+  </div>
+
+  <!--CANCELED OR FAILURE TRANSACTION MODAL-->
+  <div class="dismiss" id="failed_transaction_modal_container">
+    <div class="failed-transaction-modal-content">
+      <img class="failed-icon" src="./images/banknotes-512.png" width="40" height="40" />
+
+      <span class="failed-transaction-modal-title">Transaction Failed</span>
+
+      <button class="approval" id="okay_failed" type="button">ok</button>
+    </div>
+  </div>
+
+  <!--INITIATE TRANSACTION-->
+  <div class="dismiss" id="initiate_transaction_container">
+
+    <div class="ininitiate_transaction_content_holder">
+      <input type="phone" name="" id="buyer_phone_input" placeholder="Phone #" />
+
+
+      <button id="initiate_transaction_button" type="button">INITIATE TRANSACTION</button>
+
+    </div>
+
+  </div>
+  <!--SCRIPTS-->
+  <script src="./assets/shops.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

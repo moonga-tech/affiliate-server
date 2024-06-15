@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Marketing tool for businesses" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Affiliate Portal</title>
+  <link rel="shortcut icon" href="./images/lydia logo.jpg" />
+  <link rel="stylesheet" href="./assets/Wallet.css" />
+</head>
+
+<body>
+
+  <div id="snackbar">Copied to clipboard..</div>
+  <div class="onload">
+    <img class="icon" src="./images/IMG-20221220-WA0001.jpg" width="100" height="100" />
+  </div>
+
+  <!--LOGIN SECTION-->
+  <div class="login-container" id="login-container">
+    <!--LOGIN SECTION (CONTENT HOLDER)-->
+    <div class="login-content" id="signin-content-holder">
+      <img id="loading-icon-locked" src="./images/lydia_official_logo.jpg" width="40" height="40" />
+      <img id="loading-icon-unlocked" src="./images/lydia logo.jpg" width="40" height="40" />
+      <!--SIGN IN NOTIFICATION-->
+      <div class="sign-up-notification">
+        <span class="notification-title">Successfully Signed Up</span>
+      </div>
+
+      <!--INPUT AND ICON HOLDER(phone number)-->
+      <div class="phone-number-password-container">
+        <img src="./images/smartphone.png" width="15" height="15" />
+
+        <input class="text-input" type="tel" id="phone-number-login" placeholder="Phone Number" />
+      </div>
+
+      <!--INPUT AND ICON HOLDER (password)-->
+      <div class="phone-number-password-container">
+        <img src="./images/padlock.png" width="15" height="15" />
+
+        <input class="text-input" id="password-login" value="" type="password" placeholder="Password" />
+      </div>
+
+      <!--Login button-->
+      <button class="login-b" id="login-button" type="button">Login</button>
+
+      <div class="route-signup">
+        <span id="forgot-password">Forgot password?</span>
+      </div>
+    </div>
+
+    <!--SIGN UP SECTION (CONTENT HOLDER)-->
+    <div class="dismiss" id="signup-content-holder">
+      <img width="20" height="20" id="loading-icon-signup" src="./images/lydia logo.jpg" alt="" />
+      <!--SIGN UP NOTIFICATION-->
+      <div class="sign-up-notification">
+        <span class="notification-title">Successfully Signed Up</span>
+      </div>
+
+      <div class="signup-title">
+        <span>User Details</span>
+      </div>
+      <div class="name-details-holder">
+        <input class="name-input" type="text" id="first-name" placeholder="First Name" />
+        <input class="name-input" type="text" id="last-name" placeholder="Last Name" />
+      </div>
+
+      <input class="signup-input" type="tel" id="signup-input-phone-number" placeholder="Phone Number" />
+      <input class="signup-input" type="email" id="signup-input-email" placeholder="email" />
+
+      <input class="signup-input" id="signup-input-password" value="" type="password" placeholder="password" />
+
+      <button class="signup-b" id="signup-button" type="button">
+        Sign Up
+      </button>
+    </div>
+
+    <!--ALTERNATIVE LOGIN-->
+
+    <div class="alternative-options">
+      <span id="or-sign">Or sign up with</span>
+
+      <div class="signin-options">
+        <img src="./images/mtn_icon.jpg" width="30" height="30" />
+
+        <img src="./images/zamtel_icon.png" width="30" height="30" />
+      </div>
+
+      <div class="account-opening">
+        <span id="account">Don't have an account?</span>
+
+        <span id="signup-link">Signup</span>
+      </div>
+    </div>
+  </div>
+
+  <!--TOP SECTION-->
+  <div class="top">
+    <div class="profile">
+      <div class="client-details-container">
+        <h3 id="title">Hello,</h3>
+        <h6 id="name">Boyd Mulenga</h6>
+      </div>
+    </div>
+
+    <div class="amount-container">
+      <span class="amount_digit" id="amount_digit">ZMW 1200</span>
+
+      <h1 class="balance">Total Balance</h1>
+
+      <div class="widthdraw_content_holder">
+
+        <button id="withdraw_button">withdraw</button>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------start----------------------->
+  <!--MIDDLE SECTION-->
+    <!--transfer-->
+    <div class="transfer_container" id="transfer_container">
+      <span id="click_number">120 clicks</span>
+      <div class="generate_link_content_holder">
+       
+      </div>
+    </div>
+  
+  <!--home-->
+  <div class="home_container" id="home_container">
+    <span id="click_number_">sssssss</span>
+    <div class="generate_link_content_holder">
+      <button id="generate_link">Generate link</button>
+      <div class="generated_link_container">
+        <button id="generated_link">www.zzzzzz.com</button><img src="./images/icons8-copy-96.png" alt="" width="20"
+          height="20" id="copy_button">
+      </div>
+    </div>
+  </div>
+
+  <!--transaction container-->
+  <div class="dismiss" id="transaction_container">
+    <span id="click_number">120 clicks</span>
+    <div class="generate_link_content_holder">
+      <button id="generate_link">Generate link</button>
+      <div class="generated_link_container" id="generated_link_container">
+        <button id="generated_link">www.zzz.com</button><img  id="copy_button" src="./images/icons8-copy-96.png" alt="" width="20"
+          height="20 ">
+      </div>
+    </div>
+  </div>
+
+  <!--profile container-->
+  <div class="dismiss" id="profile_container">
+    <div class="profile_content_holder">
+
+      <input class="password_input" type="text" placeholder="Old Password" id="Old_password">
+      <input class="password_input" type="text" placeholder="New Password" id="new_password">
+
+      <button id="reset_password">Reset Password</button>
+    </div>
+  </div>
+  <!----------------------------end------------------------->
+  <!--BOTTOM SECTION MENU-->
+  <div class="bottom">
+    <div class="menu">
+      <div class="bottom-icon-container">
+        <img class="menu-icon" src="./images/home-7-512.png" id="home_menu" width="50" height="50" />
+
+        <span class="menu-icon-title">Home</span>
+      </div>
+
+      <div class="bottom-icon-container">
+        <img class="menu-icon" src="./images/banknotes-512.png" id="transact_menu" width="50" height="50" />
+
+        <span class="menu-icon-title">Transact</span>
+      </div>
+
+      <div class="bottom-icon-container">
+        <img class="menu-icon" src="./images/icons8-admin-settings-male-96.png" id="profile_menu" width="50" height="500" />
+
+        <span class="menu-icon-title">Visa</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--SCRIPTS-->
+  <script src="./assets/wallet.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

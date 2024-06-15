@@ -1,0 +1,132 @@
+body {
+  color: black;
+
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background-color: #ffffff;
+  background-size: cover;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 10px;
+
+  background-color: #99cccd;
+  display: flex;
+  justify-content: center;
+}
+.page-header span {
+  font-size: 20px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px;
+  font-size: 0.9em;
+  min-width: 350px;
+}
+
+.content-table thead tr {
+  background-color: #99cccd;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+content-table td {
+  padding: 10px 13px;
+}
+.content-table tbody td {
+  padding: 10px 13px;
+  border-bottom: 1px solid #dddddd;
+}
+.page-content-container {
+  margin-top: 10px;
+
+  padding: 0%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+}
+.page-content {
+  margin-left: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rowholder {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+}
+
+#paymenttitles {
+  margin-left: 10px;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#invoice-titles {
+  font-size: 10px;
+}
+#InvoiceiD {
+  font-size: 12px;
+}
+
+.titles {
+  align-items: start;
+  text-align: left;
+  color: grey;
+  font-size: 12px;
+}
+
+.subtitles {
+  margin-left: 5px;
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.icon {
+  border-radius: 40px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.2);
+  }
+
+  to {
+    transaform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    scale: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

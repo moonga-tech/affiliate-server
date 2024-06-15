@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Invoice</title>
+  <meta
+    name="description"
+    content="Payment system that safeguides online transactions"
+  />
+  <link rel="shortcut icon" href="./images/zatu_icon.png" />
+  <link rel="stylesheet" href="./assets/credit.css" />
+</head>
+
+<body>
+
+
+<div class="header">
+
+    <span>PAJAJI BUSINESS VENTURE LIMITED</span>
+</div>
+
+
+    <!--INPUT DETAILS CONTAINER-->
+    <div class="input_details_container" id="input_details_container">
+      <div class="input_details_content_holder">
+        <div class="size_inputs_holder">
+          <span class="input_titeles"
+            >Full Names</span>
+
+          <input type="text" id="sizes_inputs" placeholder="Names" />
+          <span id="quantity_title"></span>
+        </div>
+
+        <div class="product_image_container">
+          <span class="input_titeles">Profile Picture</span>
+          <input type="file" id="file_inputs" accept="image" />
+        </div>
+        <div class="product_image_container">
+            <span class="input_titeles">NRC - PDF format</span>
+            <input type="file" id="file_inputs" accept="image" />
+          </div>
+          <div class="product_image_container">
+            <span class="input_titeles">Pay slip - PDF format</span>
+            <input type="file" id="file_inputs" accept="image" />
+          </div>
+          <div class="size_inputs_holder">
+            <span class="input_titeles"
+              >Amount being Applied for</span>
+  
+            <input type="tel" id="sizes_inputs" placeholder="Amount" />
+            <span id="quantity_title"></span>
+          </div>
+  
+        <div class="date_picker_holder">
+        
+        
+        </div>
+
+        <span id="add_product">Apply</span>
+        <span id="cancel_add_product">Cancel</span>
+      </div>
+    </div>
+
+ 
+
+
+  <!--SUCESSFUL TRANSACTION MODAL-->
+  <div class="modal-container-after" id="modal-container">
+    <div class="modal-content">
+      <img class="tick" src="./images/check.png" width="40" height="40" />
+
+      <span class="modal-title">Purchase Order Successfully Submitted</span>
+
+      <button class="approval" id="okay-successful" type="button">ok</button>
+    </div>
+  </div>
+
+</body>
+<script src=""></script>

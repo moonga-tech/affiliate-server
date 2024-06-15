@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Invoice</title>
+  <meta
+    name="description"
+    content="Payment system that safeguides online transactions"
+  />
+  <link rel="shortcut icon" href="./images/zatu_icon.png" />
+  <link rel="stylesheet" href="./assets/order.css" />
+</head>
+
+<body>
+
+
+
+  <!--MISSING ORDER NUMBER-->
+  <div class="loading-container-after" id="missing-order-number-container">
+   <span>PURCHASE ORDER PHONE NUMBER RECEIVER MISSING</span>
+  </div>
+
+
+
+  <!--LANDING SCREEN-->
+  <div class="main_container">
+    <div class="TOP">
+      <span>ORDER REQUEST</span>
+    </div>
+
+    <div id="purchase_order_button_holder">
+      <span id="purchase_order_button"> Send purchase order </span>
+    </div>
+
+    <span id="empty_product_title">PRODUCT LIST EMPTY</span>
+
+    <span id="empty_product_subtitle"
+      >Click on the plus sign below to add products desired to the purchase
+      order</span
+    >
+
+    <div class="floating_button_container">
+      <span id="floating_button"> +</span>
+    </div>
+
+    <!--PRODUCT LIST CONTAINER-->
+    <div class="product_list" id="product_list"></div>
+
+    <!--INPUT DETAILS CONTAINER-->
+    <div class="input_details_container" id="input_details_container">
+      <div class="input_details_content_holder">
+        <div class="size_inputs_holder">
+          <span class="input_titeles"
+            >Sizes wanted? eg. input format 40,41,45,X,XL</span>
+
+          <input type="text" id="sizes_inputs" placeholder="sizes wanted" />
+          <span id="quantity_title"></span>
+        </div>
+
+        <div class="product_image_container">
+          <span class="input_titeles">Product Picture</span>
+          <input type="file" id="file_inputs" accept="image" />
+        </div>
+        <div class="date_picker_holder">
+        
+        
+        </div>
+
+        <span id="add_product">Add</span>
+        <span id="cancel_add_product">Cancel</span>
+      </div>
+    </div>
+
+    <!--USER INPUT DETAILS CONTAINER-->
+    <div class="user_input_details_container" id="user_input_details_container">
+      <div class="user_input_details_content_holder">
+        <div class="user_input_tile_holder"> <span id="user_register_title">What's your phone number? </span></div>
+       
+        <input type="text" id="phone_number_input" placeholder="Phone # ( 096xxxxxxxx) " />
+
+        <span id="register_user_button">Register</span>
+      </div>
+    </div>
+  </div>
+
+  <!--LOADING TRANSACTION-->
+  <div class="loading-container-after" id="loading-container">
+    <div class="loading-content-holder">
+      <img id="mtn" src="./images/zatu_icon.png" width="50" height="50" />
+      <span>Sending Order Request</span>
+    </div>
+  </div>
+
+
+
+
+  <!--SUCESSFUL TRANSACTION MODAL-->
+  <div class="modal-container-after" id="modal-container">
+    <div class="modal-content">
+      <img class="tick" src="./images/check.png" width="40" height="40" />
+
+      <span class="modal-title">Purchase Order Successfully Submitted</span>
+
+      <button class="approval" id="okay-successful" type="button">ok</button>
+    </div>
+  </div>
+
+</body>
+<script src="./assets/order.js"></script>

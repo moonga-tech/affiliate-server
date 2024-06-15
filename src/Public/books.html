@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Invoice</title>
+  <meta
+    name="description"
+    content="Payment system that safeguides online transactions"
+  />
+  <link rel="shortcut icon" href="./images/zatu_icon.png" />
+  <link rel="stylesheet" href="./assets/books.css" />
+</head>
+
+<body>
+  <!--LOGIN SECTION-->
+  <div class="login-container">
+    <!--LOGIN SECTION (CONTENT HOLDER)-->
+    <div class="login-content" id="signin-content-holder">
+      <img
+        id="loading-icon-locked"
+        src="./images/padlock.png"
+        width="40"
+        height="40"
+      />
+      <img
+        id="loading-icon-unlocked"
+        src="./images/unlocked.png"
+        width="40"
+        height="40"
+      />
+      <!--SIGN IN NOTIFICATION-->
+      <div class="sign-up-notification">
+        <span class="notification-title">Successfully Signed Up</span>
+      </div>
+
+      <!--INPUT AND ICON HOLDER(phone number)-->
+      <div class="phone-number-password-container">
+        <img src="./images/smartphone.png" width="15" height="15" />
+
+        <input
+          class="text-input"
+          type="tel"
+          id="phone-number-login"
+          placeholder="Phone Number"
+        />
+      </div>
+
+      <!--INPUT AND ICON HOLDER (password)-->
+      <div class="phone-number-password-container">
+        <img src="./images/padlock.png" width="15" height="15" />
+
+        <input
+          class="text-input"
+          id="password-login"
+          value=""
+          type="password"
+          placeholder="Password"
+        />
+      </div>
+
+      <!--Login button-->
+      <button class="login-b" id="login-button" type="button">Login</button>
+
+      <div class="route-signup">
+        <span id="forgot-password">Forgot password?</span>
+      </div>
+    </div>
+
+    <!--SIGN UP SECTION (CONTENT HOLDER)-->
+    <div class="signup-content-after" id="signup-content-holder">
+      <img
+        width="20"
+        height="20"
+        id="loading-icon-signup"
+        src="./images/Picsart_22-12-18_19-21-26-982.png"
+        alt=""
+      />
+      <!--SIGN UP NOTIFICATION-->
+      <div class="sign-up-notification">
+        <span class="notification-title">Successfully Signed Up</span>
+      </div>
+
+      <div class="signup-title">
+        <span>User Details</span>
+      </div>
+      <div class="name-details-holder">
+        <input
+          class="name-input"
+          type="text"
+          id="first-name"
+          placeholder="First Name"
+        />
+        <input
+          class="name-input"
+          type="text"
+          id="last-name"
+          placeholder="Last Name"
+        />
+      </div>
+
+      <input
+        class="signup-input"
+        type="tel"
+        id="signup-input-phone-number"
+        placeholder="Phone Number"
+      />
+      <input
+        class="signup-input"
+        type="email"
+        id="signup-input-email"
+        placeholder="email"
+      />
+
+      <input
+        class="signup-input"
+        id="signup-input-password"
+        value=""
+        type="password"
+        placeholder="password"
+      />
+
+      <button class="signup-b" id="signup-button" type="button">
+        Sign Up
+      </button>
+    </div>
+
+    <!--ALTERNATIVE LOGIN-->
+
+    <div class="alternative-options">
+      <span id="or-sign">Or sign up with</span>
+
+      <div class="signin-options">
+        <img src="./images/New-mtn-logo.jpg" width="30" height="30" />
+
+        <img
+          src="./images/Screen_shot_2011-04-15_at_22.04.12_400x400.png"
+          width="30"
+          height="30"
+        />
+      </div>
+
+      <div class="account-opening">
+        <span id="account">Don't have an account?</span>
+
+        <span id="signup-link">Signup</span>
+      </div>
+    </div>
+  </div>
+
+
+    <!--INPUT DETAILS CONTAINER-->
+    <div class="input_details_container" id="input_details_container">
+        <div class="input_details_content_holder">
+          <div class="size_inputs_holder">
+            <span class="input_titeles"
+              >Book Title</span>
+  
+            <input type="text" id="sizes_inputs" placeholder="Book Title" />
+            <span id="quantity_title"></span>
+          </div>
+  
+          <div class="product_image_container">
+            <span class="input_titeles">Book Picture</span>
+            <input type="file" id="file_inputs" accept="image" />
+          </div>
+
+          <div class="product_image_container">
+            <span class="input_titeles">PDF file</span>
+            <input type="file" id="file_inputs" accept="image" />
+          </div>
+  
+          <span id="add_product">Add</span>
+          <span id="cancel_add_product">Cancel</span>
+        </div>
+      </div>
+
+  <!--MISSING ORDER NUMBER-->
+  <div class="client_details_container">
+    <div class="client_details_content">
+      <img src="./images/zatu_icon.png" alt="" width="50" height="50" />
+      <span id="client_name">Deego Deego</span>
+    </div>
+  </div>
+
+  <!--WALLET DETAILS-->
+  <div class="wallet_details_container">
+    <div class="wallet_details_content">
+      <span class="title">Total Sales</span
+      ><span id="total_sales">ZMW 1000</span>
+    </div>
+  </div>
+
+  <!--BOOK DETAILS-->
+  <div class="book_details_container">
+    <div class="button_holder">
+      <span id="add_book_button">Add Book</span>
+    </div>
+
+    <div id="book_holder">
+      <div class="book_holder_content">
+        <div class="image_and_title_holder">
+          <img src="./images/images (1).png" alt="" width="50" height="50" />
+          <span class="sales_title">AGAINST ALL ODDS</span>
+        </div>
+
+        <div class="views_holder">
+          <span class="view_title">Views</span> <span id="view">Views</span>
+        </div>
+        <div class="sales_generated_holder">
+          <span class="sales__generated_title">Sales</span>
+          <span id="sales_generated">ZMW 1000</span>
+        </div>
+      </div>
+
+      <div class="book_holder_content">
+        <div class="image_and_title_holder">
+          <img src="./images/images (1).png" alt="" width="50" height="50" />
+          <span class="sales_title">AGAINST ALL ODDS</span>
+        </div>
+
+        <div class="views_holder">
+          <span class="view_title">Views</span> <span id="view">Views</span>
+        </div>
+        <div class="sales_generated_holder">
+          <span class="sales__generated_title">Sales</span>
+          <span id="sales_generated">ZMW 1000</span>
+        </div>
+      </div>
+
+      <div class="book_holder_content">
+        <div class="image_and_title_holder">
+          <img src="./images/images (1).png" alt="" width="50" height="50" />
+          <span class="sales_title">AGAINST ALL ODDS</span>
+        </div>
+
+        <div class="views_holder">
+          <span class="view_title">Views</span> <span id="view">Views</span>
+        </div>
+        <div class="sales_generated_holder">
+          <span class="sales__generated_title">Sales</span>
+          <span id="sales_generated">ZMW 1000</span>
+        </div>
+      </div>
+
+      <div class="book_holder_content">
+        <div class="image_and_title_holder">
+          <img src="./images/images (1).png" alt="" width="50" height="50" />
+          <span class="sales_title">AGAINST ALL ODDS</span>
+        </div>
+
+        <div class="views_holder">
+          <span class="view_title">Views</span> <span id="view">Views</span>
+        </div>
+        <div class="sales_generated_holder">
+          <span class="sales__generated_title">Sales</span>
+          <span id="sales_generated">ZMW 1000</span>
+        </div>
+      </div>
+
+      <div class="book_holder_content">
+        <div class="image_and_title_holder">
+          <img src="./images/images (1).png" alt="" width="50" height="50" />
+          <span class="sales_title">AGAINST ALL ODDS</span>
+        </div>
+
+        <div class="views_holder">
+          <span class="view_title">Views</span> <span id="view">Views</span>
+        </div>
+        <div class="sales_generated_holder">
+          <span class="sales__generated_title">Sales</span>
+          <span id="sales_generated">ZMW 1000</span>
+        </div>
+      </div>
+
+      <div class="book_holder_content">
+        <div class="image_and_title_holder">
+          <img src="./images/images (1).png" alt="" width="50" height="50" />
+          <span class="sales_title">AGAINST ALL ODDS</span>
+        </div>
+
+        <div class="views_holder">
+          <span class="view_title">Views</span> <span id="view">Views</span>
+        </div>
+        <div class="sales_generated_holder">
+          <span class="sales__generated_title">Sales</span>
+          <span id="sales_generated">ZMW 1000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./assets/books.js"></script>

@@ -1,0 +1,444 @@
+body{ 
+    
+
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+   padding: 10px;
+    background-color: #0022B0;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.page-header span{
+
+    font-size: 20px;
+color: #dddddd;
+   padding-top: 5px;
+   padding-bottom: 2px;
+
+}
+.content-table{
+    width: 100%;
+border-collapse: collapse;
+    margin: 25px;
+    font-size: 0.9em;
+    min-width: 350px;
+
+}
+
+.content-table thead tr{
+    background-color: blue;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, content-table td{
+padding: 10px 13px;
+
+}
+.content-table tbody td{
+padding: 10px 13px;
+border-bottom: 1px solid #dddddd;
+
+}
+.page-content-container{
+
+    margin-top: 10px;
+    
+   padding: 0%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+  
+
+}
+.page-content{
+  
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rowholder{
+
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+
+}
+
+
+
+#paymenttitles {
+    margin-left: 10px;
+    font-size: 12px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+#invoice-titles{
+    font-size: 10px;
+
+
+}
+#InvoiceiD{
+  
+    font-size: 12px;
+
+ 
+}
+
+#status{
+  
+    font-size: 12px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius:20px;
+    color: white;
+    background-color: red;
+    border: 0;
+ 
+}
+.float-button{
+   box-shadow: 0 20px 30px 0 rgba(0,0,0,.1), 0 4px 4px 0 rgba(0,0,0,.15);
+   
+   height: 11%;
+    display: flex;
+    justify-content: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius:25px;
+    color: white;
+    background-color: blue;
+    width: 90%;
+    font-size: 17px;
+    border: 0;
+    
+}
+
+.titles{
+    align-items: start;
+ text-align: left;
+    color: grey;
+    font-size: 12px;
+}
+
+.subtitles {
+    margin-left: 5px;
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+}
+    
+.zatu{
+    height: 30%;
+    display: flex;
+    font-size: 15px;
+    justify-content:center;
+    width: 90%;
+    text-align: center;
+}
+
+.image-supported{
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    
+}
+.image-container{
+        
+    margin-top:10px;
+    margin-bottom:20px;
+    display: flex;
+   align-items: center; 
+    flex-direction: column;
+    width: 99%;
+    
+    
+}
+
+.icon{
+    
+border-radius: 40px;
+}
+
+
+.transaction-container{
+  visibility: hidden;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.753) 10%, rgb(32, 45, 160));
+    z-index: 2;
+    position:fixed;
+    display: flex;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.transaction-container-after{
+
+    display: none;
+ }
+.button-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+
+    border-radius:5px;
+    background-color:white;
+    
+    }
+
+.loading-container{
+     
+    
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.918);
+    width: 100%;
+    height: 100%;
+}
+.loading-container-after{
+
+   display: none;
+}
+
+.loading-logo{
+    border-radius: 10px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.loading-content-holder{
+    
+   
+   border: 1px solid rgba(255, 255, 255, 0.534);
+   border-radius: 10px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:70%;
+    text-align: center;
+    
+}
+
+#mtn{
+   margin-top: 15px;
+    border-radius: 70px;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+   
+}
+
+#loading-title{
+
+   font-size: 19px;
+   color: #ffffff;
+
+}
+#propmt{
+   color: #ffffff;
+    text-align: center;
+    font-size: 9px;
+    
+}
+#time_out_coutnt{
+   color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+     
+}
+
+.modal-container-after{
+    display: none;
+         
+     }
+     .modal-container{
+     
+        z-index: 1;
+        position:fixed;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.918);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     }
+.failed-transaction-modal-container{
+    z-index: 5;
+    position:fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.918);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .failed-transaction-modal-container-after{
+    display: none;
+ }
+.failed-transaction-modal-content{
+
+              
+    border: 1px solid rgba(255, 255, 255, 0.534);
+    border-radius: 10px;
+     height: 30%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width:70%;
+     text-align: center;
+     
+}
+.failed-icon{
+
+ 
+    padding: 5px;
+    border-radius: 40px;
+    background-color: red;
+
+}
+
+.failed-transaction-modal-title{
+    margin-top: 10px;
+    margin-bottom: 19px;
+    color:rgba(255, 255, 255, 0.856) ;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+   
+    
+
+}
+
+
+@keyframes pulse{
+    from{transform: scale(.2)}
+        
+    to{transaform: scale(1)}
+    
+}
+
+#check{
+    
+    
+   display: none;
+}
+
+#circle {
+display: block;
+animation: spin 2s infinite;
+}
+#initiate{ 
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,.1), 0 4px 4px 0 rgba(0,0,0,.15);
+   font-size: 12px;
+   height: 40px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 20px;
+   margin-top: 10px;
+
+   background-color: green;
+   border-width: 0;
+   color: white;
+}
+
+#verify-input{
+    
+    font-size: 15px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-width: 1px;
+
+    padding-left: 15px;
+    }
+    
+#cancel{
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,.1), 0 4px 4px 0 rgba(0,0,0,.15);
+    
+    font-size:12px;
+    color: white;
+    background-color: red;
+    
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-width: 0;  
+
+    }
+   
+@keyframes spin {
+0% {
+  scale: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
